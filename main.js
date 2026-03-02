@@ -40,7 +40,7 @@ const convidadosRef = collection(db, "convidados");
 // ==============================
 // 🔐 SENHA DO SITE
 // ==============================
-const senhaCorreta = "26";
+const senhaCorreta = "cat2626";
 
 window.verificarSenha = function() {
   const senha = document.getElementById("senhaInput").value;
@@ -143,5 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("naoVao").innerText = nao;
 
   });
+
 
 });
