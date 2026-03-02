@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Convite Aniversário</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+  <!-- Tela de senha -->
+  <div id="telaSenha">
+    <h2>🔒 Convite Privado</h2>
+    <p>Digite a senha para acessar</p>
+    <input type="password" id="senhaInput" placeholder="Senha">
+    <button onclick="verificarSenha()">Entrar</button>
+  </div>
+
+  <!-- Conteúdo -->
+  <div id="conteudo">
+
+    <div class="convite">
+      <h1>🎂 Aniversário da Catarina 🎂</h1>
+      <h2>1 Aninho</h2>
+      <p><strong>Você está convidado para comemorar conosco</strong></p><br>
+
+      <div class="data-hora">
+          <div class="mini-card">
+            <span>📅</span>
+            <strong>23 de Maio</strong>
+          </div>
+
+          <div class="mini-card">
+            <span>⏰</span>
+            <strong>19:00</strong>
+          </div>
+      </div>
+
+      <p><strong>Buffet Infantil:</strong> Wanell Park</p>
+      <p><strong>Local:</strong> Rua Beatriz Ângelo Ricardo, N° 20, Ouro Fino</p><br>
+      <h3 class="presente">🎁 Sugestão de presentes: Brinquedos</h3>
+    </div>
+
+    <div class="confirmacao">
+      <h2>Confirme sua presença</h2>
+      <input type="text" id="nome" placeholder="Seu nome">
+      <br>
+      <button class="vou" onclick="confirmar('vou')">✔️ Vou</button>
+      <button class="nao" onclick="confirmar('nao')">❌ Não vou</button>
+    </div>
+
+    <div class="painel">
+      <h2>📊 Lista de Confirmações</h2>
+
+      <div class="resumo">
+        <div class="card">
+          <h3>TOTAL LISTA</h3>
+          <div id="total">0</div>
+        </div>
+        <div class="card">
+          <h3>CONFIRMADOS</h3>
+          <div id="vao">0</div>
+        </div>
+        <div class="card">
+          <h3>AUSENTES</h3>
+          <div id="naoVao">0</div>
+        </div>
+      </div>
+
+      <div class="lista" id="lista"></div>
+    </div>
+
+  </div>
+
+  <script type="module" src="main.js"></script>
+  <!--<script src="main.js"></script>-->
+
+</body>
+</html> 
